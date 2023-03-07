@@ -37,7 +37,7 @@ window.onload= function(){
            game.player.name = name;
            $('nameinput').style.display = 'none';
            
-           game.currentScene = puzzlescene();
+           game.currentScene = menuscene();
          }
          
          if (game.touch.touchtype == 'touchstart' &&
@@ -48,7 +48,7 @@ window.onload= function(){
          ) { //つづきから
              $('nameinput').style.display = 'none';
              
-             game.currentScene = puzzlescene();
+             game.currentScene = menuscene();
          }
       
       
@@ -308,7 +308,7 @@ const puzzlescene = ()=>{
 }
   
 
-  game.add( titlescene() );
+  game.add( puzzlescene() );
   
   game.start();
   
