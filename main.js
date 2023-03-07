@@ -307,7 +307,7 @@ const puzzlescene = ()=>{
   return scene;
 }
   
-
+  $('nameinput').style.display = 'none';
   game.add( puzzlescene() );
   
   game.start();
