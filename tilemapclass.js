@@ -16,16 +16,9 @@ class Tilemap {
     
     this.datatilesSansyutu();
     
-    $('testbutton1').onclick = () => {
-      if($('testinput1').value == '' ||
-         $('testinput2').value == '' ||
-         $('testinput3').value == '')return;
-      let x = Number( $('testinput1').value );
-      let y = Number( $('testinput2').value );
-      let z = Number( $('testinput3').value );
-      this.datatiles[y][x].fall(z);
-      this.add(new Animationtile('disappearAnimation.png',x,y,5));
-    }
+    
+      
+    
 
   }
   
