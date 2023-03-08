@@ -28,5 +28,6 @@ class Scene{
   
   onenterframe(){} //オーバーライドする
   
+  touchevent(){}
 }
 
