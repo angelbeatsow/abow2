@@ -31,6 +31,8 @@ class Game{
     	this.touch.touchtype = eventType;
     	this.touch.x = x;
     	this.touch.y = y;
+	
+	this.currentScene.touchevent();
       
       //var sp = new Pointer('red.png',x-16,y-16);
       //this.currentScene.add(sp);
@@ -51,6 +53,8 @@ class Game{
     	this.touch.touchtype = eventType;
     	this.touch.x = x;
     	this.touch.y = y;
+	
+	this.currentScene.touchevent();
       
       //var sp = new Pointer('blue.png', x - 16, y - 16);
       //this.currentScene.add(sp);
@@ -71,10 +75,14 @@ class Game{
     	this.touch.touchtype = eventType;
     	this.touch.x = x;
     	this.touch.y = y;
+	
+	this.currentScene.touchevent();
     });
     
     this.canvas.addEventListener('touchcancel',(event)=>{
       this.touch.touchtype = event.type;
+      
+      this.currentScene.touchevent();
       
     });
 
