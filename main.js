@@ -297,8 +297,7 @@ const puzzlescene = ()=>{
           　　    let thisxzahyou = Math.floor(game.touch.x / tile_size);
                 let thisyzahyou = Math.floor(game.touch.y / tile_size);
 
-                let zahyou = this.objs[0].datatiles[thisyzahyou - 1][thisxzahyou - 1].getzahyou();
-                let jouhou = [game.touch.touchtype].concat(zahyou);
+                let jouhou = [game.touch.touchtype,color[ this.objs[0].data[thisyzahyou - 1][thisxzahyou - 1] ],thisxzahyou,thisyzahyou];
                 if(jouhou[0] == 'touchstart'){
                   this.lastpoint = jouhou;
                   this.nowpoint = jouhou;
@@ -315,8 +314,7 @@ const puzzlescene = ()=>{
               let thisxzahyou = Math.floor(game.touch.x / tile_size);
               let thisyzahyou = Math.floor(game.touch.y / tile_size);
               // console.log([thisxzahyou,thisyzahyou]);
-              let zahyou = this.objs[0].datatiles[thisyzahyou - 1][thisxzahyou - 1].getzahyou();
-              let jouhou = [game.touch.touchtype].concat(zahyou);
+              let jouhou = [game.touch.touchtype,color[ this.objs[0].data[thisyzahyou - 1][thisxzahyou - 1] ],thisxzahyou,thisyzahyou];
               if(JSON.stringify(this.nowpoint) != JSON.stringify(jouhou)){  //パズルタイルを触っていて、game.touchが変わったら、
                      //scene.nowpointに代入
                 this.nowpoint = jouhou;
