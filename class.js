@@ -8,7 +8,7 @@ function random(min,max){
 
 const color = ['black','red','green','blue','purple','yellow','pink'];
 
-
+const canvas = $('canvas');
 
 
 
